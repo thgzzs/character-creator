@@ -8,7 +8,6 @@ const colorPicker = document.getElementById('colorPicker');
 const MAX_RECENT = 6;
 
 const zoomSlider = document.getElementById('zoomSlider');
-const zoneScale = document.getElementById('character-zone-scale');
 
 function applyZoom(level) {
   zone.style.transform = `scale(${level})`;
