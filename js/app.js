@@ -539,6 +539,7 @@ document.getElementById('exportBtn').addEventListener('click', () => {
   a.href = url;
   a.download = 'character.json';
   a.click();
+  URL.revokeObjectURL(url);
 });
 
 document.getElementById('importBtn').addEventListener('click', () => {
