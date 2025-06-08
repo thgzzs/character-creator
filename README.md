@@ -9,5 +9,4 @@ Open `index.html` in a modern browser. Drag characters from the palette onto the
 ## Development
 
 Styles are in `css/style.css` and JavaScript logic is in `js/app.js`.
-The original monolithic file `character_creator.html` is kept for reference.
 
