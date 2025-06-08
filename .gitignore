@@ -1,0 +1,10 @@
+# Node
+node_modules/
+
+# Logs
+npm-debug.log*
+.yarn*
+
+# OS generated
+.DS_Store
+Thumbs.db
