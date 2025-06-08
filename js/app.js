@@ -553,6 +553,7 @@ document.getElementById('importFile').addEventListener('change', e => {
   reader.onload = () => {
     localStorage.setItem('savedCharacterLayout', reader.result);
     loadCharacters();
+    e.target.value = '';
   };
   reader.readAsText(file);
 });
