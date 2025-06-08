@@ -524,6 +524,12 @@ function loadCharacters() {
     span.addEventListener('click', () => selectChar(span));
   });
 
+  const maxZIndex = Math.max(
+    0,
+    ...[...zone.querySelectorAll('.char')].map(el => parseInt(el.style.zIndex) || 0)
+  );
+  zCounter = maxZIndex + 1;
+
   alert("Character loaded!");
 }
 
