@@ -1,8 +1,8 @@
 # Character Creator
 
-A web-based interface for building characters using draggable symbols.
-
 https://thgzzs.github.io/character-creator/
+
+A web-based interface for building characters using draggable symbols.
 
 ## Usage
 
