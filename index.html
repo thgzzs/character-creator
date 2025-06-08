@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Character Creation</title>
+</head>
+<body>
+
+  <header>Character Creation</header>
+
+  <main>
+    <div id="controls">
+      <div class="button-bar">
+        <div>
+          <button id="undoBtn">Undo</button>
+          <button id="redoBtn">Redo</button>
+          <button id="deleteBtn">Delete</button>
+          <button id="resetBtn">Reset</button>
+        </div>
+      </div>
+
+      <div class="control-row">
+        <label for="colorPicker">Color</label>
+        <input type="color" id="colorPicker">
+        <div id="recentColors" class="color-history-inline"></div>
+      </div>
+  
+      <div class="control-row">
+        <label for="rotateSlider">Rotation</label>
+        <input type="range" id="rotateSlider" min="0" max="180">
+        <input type="number" id="rotateInput" min="0" max="180">
+      </div>
+
+      <div class="control-row">
+        <label for="scaleXSlider">Width</label>
+        <input type="range" id="scaleXSlider" min="1" max="12" step="0.1">
+        <input type="number" id="scaleXInput" min="1" max="12" step="0.1">
+      </div>
+  
+      <div class="control-row">
+        <label for="scaleYSlider">Height</label>
+        <input type="range" id="scaleYSlider" min="1" max="12" step="0.1">
+        <input type="number" id="scaleYInput" min="1" max="12" step="0.1">
+      </div>
+  
+      <div class="control-row">
+        <label for="weightSlider">Weight</label>
+        <input type="range" id="weightSlider" min="100" max="900" step="100">
+        <input type="number" id="weightInput" min="100" max="900" step="100">
+      </div>
+  
+      <div class="control-row">
+        <label for="zoomSlider">Zoom</label>
+        <input type="range" id="zoomSlider" min="0.8" max="2" step="0.01" value="1">
+      </div>
+  
+      <div class="button-row">
+        <label for="symmetryToggle">Symmetry</label>
+        <input type="checkbox" id="symmetryToggle">
+        <button id="flipH">Flip H</button>
+        <button id="flipV">Flip V</button>
+      </div>
+  
+      <div class="button-row">
+        <button id="cloneBtn">Clone</button>
+        <button id="mirrorClone">Mirror Clone</button>
+      </div>
+  
+      <div class="button-row">
+        <button id="bringFront">Bring to Front</button>
+        <button id="sendBack">Send to Back</button>
+      </div>
+    </div>
+  
+<div id="character-zone-wrapper">
+  <div id="character-zone-scale">
+    <div id="character-zone">
+      <div class="subzone" id="headZone">Head</div>
+      <div class="subzone" id="bodyZone">Body</div>
+      <div class="subzone" id="leftArmZone">Left Arm</div>
+      <div class="subzone" id="rightArmZone">Right Arm</div>
+      <div class="subzone" id="leftLegZone">Left Leg</div>
+      <div class="subzone" id="rightLegZone">Right Leg</div>
+    </div>
+  </div>
+</div>
+  
+    <div id="character-palette-wrapper">
+      <div id="character-palette"></div>
+    </div>
+
+    <div id="saveLoadControls">
+      <button id="saveBtn">Save</button>
+      <button id="loadBtn">Load</button>
+      <button id="exportBtn">Export</button>
+      <button id="importBtn">Import</button>
+      <input type="file" id="importFile" accept=".json" style="display:none;">
+    </div>      
+  </main>
+<script src="js/app.js"></script>
+</body>
+</html>
